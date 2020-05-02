@@ -171,7 +171,6 @@ const updatePriceRange = (state, action) => {
 }
 
 const searchApply = (state, action) => {
-    debugger;
     const searchText = action.value;
     const priceRangeData = state.priceRange;
     let items = [ ...state.items ];
