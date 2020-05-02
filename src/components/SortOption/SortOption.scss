@@ -1,0 +1,14 @@
+.sortOptionContainer {
+    label {
+        padding: 0 10px;
+        font-size: 14px;
+        color: #7c7a7a;
+    }
+    .bold {
+        font-weight: bold;
+        color: #2874f0
+    }
+    input[type="checkbox"] {
+        visibility: hidden;
+    }
+}

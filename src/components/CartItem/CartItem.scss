@@ -1,0 +1,75 @@
+.cartItem {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+    height: auto;
+    padding: 20px 40px 20px 10px;
+    margin: 15px;
+    justify-content: space-between;
+    border: 1px solid #b6b6b6;
+    background: #fff;
+    .itemDetails {
+        display: flex;
+        flex-wrap: nowrap;
+        width: calc(100% - 100px);
+        justify-content: space-between;
+    }
+    img {
+        width: 100px;
+        height: 120px;
+        vertical-align: middle;
+        border-style: none;
+        object-fit: cover;
+    }
+    .itemInfo {
+        margin-top: 20px;
+        .price_offer {
+            margin-top: 10px;
+        }
+    }
+    .qtyActions {
+        margin-top: 35px;
+        .minus, .plus, .qty {
+            width: 32px;
+            height: 32px;
+            background: #f2f2f2;
+            padding: 3px 5px 3px 5px;
+            border: 1px solid #9b8e8e;
+            display: inline-block;
+            vertical-align: middle;
+            text-align: center;
+            margin: 4px;
+            font-size: 16px;
+            font-weight: bold;
+            color: #9b8e8e;
+        }
+        .minus, .plus {
+            border-radius: 16px;
+        }
+        .qty {
+            width: 42px;
+            color: #000;
+        }
+    }
+    .removeLink{
+        margin-top: 45px;
+        font-weight: bold;
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 767px) {
+    .cartItem {
+        .itemDetails {
+            display: flex;
+            flex-wrap: wrap;
+            text-align: center;
+        }
+        .qtyActions {
+            display: inline-flex;
+        }
+        .removeLink{
+            width: 100%;
+        }
+    }
+}

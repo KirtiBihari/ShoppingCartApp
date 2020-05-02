@@ -1,0 +1,9 @@
+.sortListContainer {
+    display: flex;
+
+    & > label {
+        font-size: 14px;
+        font-weight: bold;
+        padding-right: 20px;
+    }
+}

@@ -1,0 +1,40 @@
+@import "../../shared/styles/Variable.scss";
+
+.headerContainer {
+    nav {
+        background-color: $header-bg-color;
+    }
+    .navbar i {
+        margin: 0 5px;
+        font-size: 22px;
+        color: #fff;
+    }
+    .navbar .navbar-brand i {
+        font-size: 30px;
+        color: #ffc107;
+    }
+    .search input {
+        max-width: 200px;
+    }
+    .cartIcon {
+        position: relative;
+        .badge {
+            position: absolute;
+            right: -8px;
+            top: -8px;
+            height: 22px;
+            width: 22px;
+            border-radius: 11px;
+            font-size: 12px;
+            padding: 5px;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .headerContainer {
+        .search input {
+            max-width: 140px;
+        }
+    }
+}

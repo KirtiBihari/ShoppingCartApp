@@ -1,0 +1,25 @@
+.shoppingItem, .cartItem {
+    .itemInfo {
+        .itemName {
+            font-size: 14px;
+        }
+        .price_offer {
+            display: flex;
+            flex-wrap: nowrap;
+            justify-content: space-between;
+        }
+        .price_offer .price {
+            font-size: 12px;
+            font-weight: bold;
+            del {
+                color: #b6b4b4;
+                padding: 0 8px;
+            }
+        }
+        .price_offer .offer {
+            font-size: 12px;
+            color: #0f9e15;
+            font-weight: bold;
+        }
+    }
+}

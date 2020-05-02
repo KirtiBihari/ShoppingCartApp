@@ -1,0 +1,11 @@
+.homeContainer {
+    display: flex;
+    justify-content: space-around;
+    .sortShoppingContainer{
+        display: flex;
+        flex-wrap: wrap;
+        width: calc(100% - 240px);
+        justify-content: space-between;
+        padding: 10px;
+    }
+}

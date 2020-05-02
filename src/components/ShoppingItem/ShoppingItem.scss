@@ -1,0 +1,29 @@
+.shoppingItem {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 140px;
+    height: auto;
+    padding: 5px;
+    img {
+        width: 100%;
+        height: 180px;
+        vertical-align: middle;
+        border-style: none;
+        object-fit: cover;
+    }
+    button {
+        width: auto;
+        padding: 5px 8px;
+        background-color: #FFC107;
+        box-shadow: none;
+        border-radius: 16px;
+        font-size: 10px;
+        margin: 0 auto;
+        font-weight: bold;
+        border-style: none;
+
+        &:focus {
+            outline: none;
+        }
+    }
+}

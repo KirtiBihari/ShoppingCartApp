@@ -1,0 +1,53 @@
+.priceInfoContainer{
+    width: 280px;
+    height: 210px;
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid #b6b6b6;
+    background-color: #fff;
+    margin: 15px;
+    .heading_lbl{
+        color: #9b8e8e;
+        font-weight: bold;
+        padding: 10px 10px 20px;
+        border-bottom: 1px solid #ccc;
+        font-size: 16px;
+        width: 100%;
+        height: 50px;
+    }
+    .details {
+        width: 100%;
+        padding: 10px;
+        border-bottom: 1px solid #ccc;
+        .actualPriceInfo, .discountPriceInfo {
+            display: flex;
+            justify-content: space-between;
+            padding: 0 0 20px 0;
+            .lbl {
+                width: 50%;
+            }
+            .symbol_txt {
+                width: 10%;
+            }
+            .val {
+                width: 40%;
+                text-align: right;
+            }
+        }
+    }
+    .totalPriceInfo {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        height: 50px;
+        padding: 10px;
+        .lbl {
+            width: 60%;
+            font-weight: bold;
+        }
+        .val {
+            width: 40%;
+            text-align: right;
+        }
+    }
+}

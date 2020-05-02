@@ -1,0 +1,9 @@
+.cartContainer {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    .cartItemList {
+        width: calc(100% - 340px);
+        text-align: center;
+    }
+}
