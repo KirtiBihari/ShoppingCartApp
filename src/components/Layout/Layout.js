@@ -11,7 +11,7 @@ const layout = (props) => {
         <React.Fragment>
             <Header />
             <Switch>
-                <Route exact path="/" component={Home} />
+                <Route exact path={["/shoppingcart", "/"]} component={Home} />
                 <Route path="/cart" component={Cart} />
             </Switch>
             <Footer />
