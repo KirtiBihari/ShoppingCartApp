@@ -1,6 +1,6 @@
 {
-  "homepage": "https://kirtibihari.github.io/ShoppingCartApp",
-  "name": "shopping-cart",
+  "homepage": "https://kirtibihari.github.io/shoppingcart",
+  "name": "shoppingcart",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
