@@ -63,7 +63,7 @@ const filters = (props) => {
             </div>
             <div style={styles.sliderWrapper}>
                 <RangeSlider
-                    step={4}
+                    step={2000}
                     value={props.priceRange}
                     min={0}
                     max={100000}
