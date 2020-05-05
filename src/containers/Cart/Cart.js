@@ -6,10 +6,11 @@ import PriceInfo from '../../components/PriceInfo/PriceInfo';
 import { updateCart, removeFromCart } from '../../store/actions/cartActions';
 
 const cart = (props) => {
-    let itemCount = 0, totalDisplayPrice = 0;
+    let itemCount = 0, totalDisplayPrice = 0, totalActualPrice = 0;
     const cartItems = props.cartItemList.map((item, index)=> {
         itemCount += parseInt(item['quantity']);
-        totalDisplayPrice += parseInt(item.price.display);
+        totalDisplayPrice += (parseInt(item.price.display) * item.quantity);
+        totalActualPrice += (parseInt(item.price.actual) * item.quantity);
         return(
             <CartItem
                 item={item}
@@ -22,7 +23,7 @@ const cart = (props) => {
     const PriceInfoProps = {
         itemCount: itemCount,
         totalDisplayPrice: totalDisplayPrice,
-        totalDiscountPrice: totalDisplayPrice - props.totalPrice,
+        totalDiscountPrice: totalDisplayPrice - totalActualPrice,
         totalPrice: props.totalPrice
     };
 

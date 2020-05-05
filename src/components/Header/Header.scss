@@ -14,7 +14,7 @@
         color: #ffc107;
     }
     .search input {
-        max-width: 200px;
+        max-width: 140px;
     }
     .cartIcon {
         position: relative;
@@ -31,10 +31,10 @@
     }
 }
 
-@media (max-width: 767px) {
+@media (min-width: 768px) {
     .headerContainer {
         .search input {
-            max-width: 140px;
+            max-width: 200px;
         }
     }
 }

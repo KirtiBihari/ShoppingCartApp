@@ -5,8 +5,14 @@
     .sortShoppingContainer{
         display: flex;
         flex-wrap: wrap;
-        width: calc(100% - 240px);
+        width: 100%;
         justify-content: space-between;
         padding: 10px;
+    }
+}
+
+@media (min-width: 768px) {
+    .shoppingList {
+        width: calc(100% - 240px);
     }
 }

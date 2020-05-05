@@ -1,10 +1,22 @@
 .cartContainer {
-    display: flex;
-    justify-content: space-between;
+    display: initial;
     padding: 10px;
     margin-bottom: 25px;
+
     .cartItemList {
-        width: calc(100% - 340px);
+        width: calc(100% - 30px);
         text-align: center;
+    }
+}
+
+
+@media (min-width: 768px) {
+    .cartContainer {
+        display: flex;
+        justify-content: space-between;
+        .cartItemList {
+            width: calc(100% - 340px);
+            text-align: center;
+        }
     }
 }

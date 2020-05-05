@@ -5,6 +5,7 @@ import ShoppingList from '../../components/ShoppingList/ShoppingList';
 import SortList from '../../components/SortList/SortList';
 import Filters from '../../components/Filters/Filters';
 import { addToCart, updateSort, updatePriceRange, updateFliter } from '../../store/actions/cartActions';
+import {isMobile} from 'react-device-detect';
 
 
 const home = (props) => {
@@ -26,13 +27,13 @@ const home = (props) => {
 
     return (
         <div className='homeContainer'>
-            <Filters
+            {!isMobile && <Filters
                 priceRange={props.priceRange}
                 updatePriceRange={handleUpdatePriceRange}
                 applyFilter={handleApplyFilter}
-            />
+            />}
             <div className='sortShoppingContainer'>
-                <SortList sortOptionList={props.sortOptionList} handleSorting={handleSorting} />
+                {!isMobile && <SortList sortOptionList={props.sortOptionList} handleSorting={handleSorting} />}
                 <ShoppingList itemList={props.shoppingItemList} itemClick={handleItemClick} />
             </div>
         </div>

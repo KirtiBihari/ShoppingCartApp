@@ -1,5 +1,5 @@
 .priceInfoContainer{
-    width: 280px;
+    width: calc(100% - 30px);
     height: 210px;
     display: flex;
     flex-wrap: wrap;
@@ -49,5 +49,11 @@
             width: 40%;
             text-align: right;
         }
+    }
+}
+
+@media (min-width: 768px) {
+    .priceInfoContainer{
+        width: 280px;
     }
 }
